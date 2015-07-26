@@ -1,0 +1,5 @@
+/node_modules
+/src
+.jshintrc
+Gruntfile.js
+package.json
