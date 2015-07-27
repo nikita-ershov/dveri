@@ -2017,6 +2017,24 @@ img {
   background: url("../images/label-new.png") 0 0 no-repeat;
   z-index: 8;
 }
+.product-preview__prev,
+.product-preview__next {
+  display: block;
+  width: 36px;
+  height: 67px;
+  position: absolute;
+  top: 50%;
+  margin-top: -34px;
+  cursor: pointer;
+}
+.product-preview__prev {
+  background: url("../images/product-preview-arrow.png") 0 0 no-repeat;
+  left: -55px;
+}
+.product-preview__next {
+  background: url("../images/product-preview-arrow.png") -36px 0 no-repeat;
+  right: -55px;
+}
 .product-preview__image {
   margin: 0 0 30px 35px;
   float: left;
