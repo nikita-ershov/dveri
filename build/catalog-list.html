@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700,600,300&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type='text/css' href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" type='text/css' href="css/style.min.css"/>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/script.min.js"></script>
+</head> 
+<body>
+
+<div class="top-line wow fadeIn">
+    <div class="container">
+        <a href="/" class="link-sanitary pull-left">Сантехника</a>
+        <a href="/" class="link-floors pull-left">ПОЛЫ</a>
+        <ul class="top-menu pull-left">
+            <li class="top-menu__item"><a href="/">Акции</a></li>
+            <li class="top-menu__item"><a href="/">Покупателям</a></li>
+            <li class="top-menu__item"><a href="/">Услуги</a></li>
+            <li class="top-menu__item"><a href="/">Строителям</a></li>
+            <li class="top-menu__item"><a href="/">О дверях</a></li>
+            <li class="top-menu__item"><a href="/">Галерея</a></li>
+            <li class="top-menu__item"><a href="/">Контакты</a></li>
+            <li class="top-menu__item"><a href="/">О компании</a></li>            
+        </ul>        
+        <div class="pull-right"><a href="/" class="link-login">Войти</a></div>
+    </div>
+</div>
+    
+<div class="header wow fadeIn">
+    <div class="container"> 
+        <div class="header__logo"><a href="#" title=""><img src="images/logo.png" alt=""></a></div>
+        <div class="header__phone">
+            <div class="header__phone__item"><span class="icon-phone"></span><span class="header__phone__highlight">+7 (343)</span> <b>247-82-48</b></div>
+            <a href="/" class="link-dot">Перезвоните мне!</a>
+        </div>
+        <div class="header__addr">
+            <div><span class="icon-map"></span><a href="/" class="header__addr__city">Екатеринбург <span class="icon-arrow-down"></span></a></div>            
+            <div>ул. Д. Зверева, 31 литер «S», оф. 45</div>
+        </div>
+        <div class="header__basket">
+            <div><span class="icon-basket"></span> <b>Корзина:</b> <a href="/">16 товаров</a></div>
+            <div><span class="icon-heart"></span> <b>Избранное:</b> <a href="/">3 товара</a></div>
+        </div>
+    </div>
+</div>
+
+<div class="nav__block wow fadeIn">
+    <div class="container">
+        <ul class="nav pull-left">
+            <li class="nav__item active">
+                <a href="/">Входные двери <span class="icon-arrow-down"></span></a>
+            </li>
+            <li class="nav__item"><a href="/">Межкомнатные двери <span class="icon-arrow-down"></span></a></li>
+            <li class="nav__item"><a href="/">Межкомнатные арки <span class="icon-arrow-down"></span></a></li>
+            <li class="nav__item"><a href="/">Фурнитура <span class="icon-arrow-down"></span></a></li>
+        </ul>
+        <div class="search-block pull-right">
+            <span class="icon-search"></span> Поиск
+        </div>
+    </div>
+</div>
+
+<div class="content-block content-block_3 wow fadeIn">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-3">            
+                <div class="side-block">
+                    <div class="filter-block">
+                        <div class="filter-block__header"><h4>СЕРИИ</h4></div>
+                        <div class="filter-block__body">
+                            <ul class="filter-block__list">
+                                <li class="filter-block__list__item"><a href="/" class="link-dot">Престиж серия <span class="icon-close">&times;</span></a></li>
+                                <li class="filter-block__list__item"><a href="/" class="link-dot">Стандарт серия <span class="icon-close">&times;</span></a></li>
+                                <li class="filter-block__list__item active"><a href="/" class="link-dot">Техническая серия <span class="icon-close">&times;</span></a></li>
+                                <li class="filter-block__list__item"><a href="/" class="link-dot">Противопожарные <span class="icon-close">&times;</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="filter-block">
+                        <div class="filter-block__header"><h4>ЦЕНА</h4></div>
+                        <div class="filter-block__body">
+                            <div id="slider-range"></div>
+                            <div class="filter-block__price">От <input type="text" class="form-control" id="amount-min"> До <input type="text" class="form-control" id="amount-max"> <span class="icon-rouble"></span></div>
+                        </div>
+                    </div>
+                    <div class="filter-block">
+                        <div class="filter-block__header"><h4>ЦВЕТ</h4></div>
+                        <div class="filter-block__body">
+                            <ul class="filter-block__color">
+                                <li class="filter-block__color__item"></li>
+                                <li class="filter-block__color__item"></li>
+                                <li class="filter-block__color__item"></li>
+                                <li class="filter-block__color__item active"></li>
+                                <li class="filter-block__color__item"></li>
+                                <li class="filter-block__color__item"></li>
+                                <li class="filter-block__color__item"></li>
+                                <li class="filter-block__color__item"></li>
+                                <li class="filter-block__color__item"></li>
+                                <li class="filter-block__color__item"></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="filter-block">
+                        <div class="filter-block__header"><h4>Толщина стали</h4></div>
+                        <div class="filter-block__body">
+                            <ul class="filter-block__list">
+                                <li class="filter-block__list__item"><a href="/" class="link-dot">1 мм <span class="icon-close">&times;</span></a></li>
+                                <li class="filter-block__list__item active"><a href="/" class="link-dot">1,5 мм <span class="icon-close">&times;</span></a></li>
+                                <li class="filter-block__list__item active"><span class="link-dot">1,5 мм <span class="icon-close">&times;</span></span></li>
+                                <li class="filter-block__list__item"><a href="/" class="link-dot">2 мм <span class="icon-close">&times;</span></a></li>
+                                <li class="filter-block__list__item"><a href="/" class="link-dot">2,5 мм <span class="icon-close">&times;</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="filter-block">
+                        <div class="filter-block__header"><h4>СТРАНА</h4></div>
+                        <div class="filter-block__body">
+                            <ul class="filter-block__list">
+                                <li class="filter-block__list__item"><a href="/" class="link-dot">Россия</a></li>
+                                <li class="filter-block__list__item"><a href="/" class="link-dot">Китай</a></li>
+                                <li class="filter-block__list__item"><a href="/" class="link-dot">Турция</a></li>
+                                <li class="filter-block__list__item"><a href="/" class="link-dot">Уганда</a></li>
+                                <li class="filter-block__list__item"><a href="/" class="link-dot">Корея</a></li>
+                                <li class="filter-block__list__item"><a href="/" class="link-dot">Норвегия</a></li>
+                                <li class="filter-block__list__item"><a href="/" class="link-dot">Голландия</a></li>
+                                <li class="filter-block__list__item"><a href="/" class="link-dot">США</a></li>
+                            </ul>
+                            <a href="/" class="filter-block__all">Показать все <span class="icon-arrow-down"></span></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="side-block side-block_noborder">
+                    <div class="side-block__header">
+                        <h4 class="side-block__title">ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ</h4>
+                    </div>
+                    <div class="side-block__body">
+                        <ul class="side-logo">
+                            <li class="side-logo__item"><a href="/"><img src="images/side-logo.jpg" /></a></li>
+                            <li class="side-logo__item"><a href="/"><img src="images/side-logo.jpg" width="90" /></a></li>
+                            <li class="side-logo__item"><a href="/"><img src="images/side-logo.jpg" width="50" /></a></li>
+                            <li class="side-logo__item"><a href="/"><img src="images/side-logo.jpg" width="100" /></a></li>
+                            <li class="side-logo__item"><a href="/"><img src="images/side-logo.jpg" width="150" /></a></li>
+                        </ul>
+                    </div>
+                    <div class="side-block__footer">
+                        <a href="/" class="link-all">Все производители</a>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-xs-9">
+                <div>
+                    <ul class="breadcrumbs">
+                        <li class="breadcrumbs__item"><a href="/">Главная</a></li>
+                        <li class="breadcrumbs__item active">Входные двери</li>
+                    </ul>
+                </div>
+                <div class="page-header">
+                    <h2 class="page-header__title">ВХОДНЫЕ ДВЕРИ</h2>
+                </div>
+                <div>
+                <div class="page-block clearfix">
+                    <ul class="filter-list">
+                        <li class="filter-list__item">Стандарт серия <span class="icon-close">&times;</span></li>
+                        <li class="filter-list__item">Стандарт серия <span class="icon-close">&times;</span></li>
+                        <li class="filter-list__item">Стандарт серия <span class="icon-close">&times;</span></li>
+                        <li class="filter-list__item">Стандарт серия <span class="icon-close">&times;</span></li>
+                        <li><a href="/" class="btn btn_xs btn_secondary">Сбросить фильтры</a></li>
+                    </ul>
+                </div>
+                <div class="page-block sort-filter clearfix">
+                    <div class="sort-filter__item"><b>Сортировать по:</b>  <span class="link-icon link-dot sort-filter__link"><span class="link">цене</span> <span class="icon-arrow-down"></span></span> <span class="link-icon link-dot sort-filter__link active"><span class="link">популярности</span> <span class="icon-arrow-down"></span></span></div>
+                    <div class="sort-filter__item"><div class="form-checkbox"><label><input type="checkbox" class="form-input_checkbox"/> Только товар в наличии</label></div></div>
+                    <div class="sort-filter__item pull-right">
+                        <a href="/" class="link-icon link-dot sort-filter__link active"><span class="icon-list"></span> <span class="link">Списком</span></a>
+                        <a href="/" class="link-icon link-dot sort-filter__link"><span class="icon-card"></span> <span class="link">Карточками</span></a>
+                    </div>
+                </div>
+                <div class="page-block clearfix">
+                    <div class="paging pull-left">
+                        <a href="#" class="paging__item">1</a>
+                        <a href="#" class="paging__item">2</a>
+                        <span class="paging__item active">3</span>
+                        <a href="#" class="paging__item">4</a>
+                        <span class="paging__item paging__item_separator">&hellip;</span>
+                        <a href="#" class="paging__item">5</a>
+                        <a href="#" class="paging__item">6</a>
+                        <a href="#" class="paging__item">7</a>
+                    </div>
+                    <div class="pull-right">Показывать по <select><option>32</option><option>22</option></select> товаров</div>
+                </div>
+                <div class="product-card-list">
+                    <div class="product-card-list__item">
+                        <div class="product-label">
+                            <div class="icon-hit"></div>
+                            <div class="icon-sale"></div>
+                            <div class="icon-new"></div>
+                        </div>
+                        <div class="product-card-list__image"><img src="images/product-preview-01.jpg"></div>
+                        <div class="product-card-list__action">
+                                <div class="product-params__item product-params_price active">
+                                    <div class="product-params_price__type">Комплект</div>
+                                    <div class="product-params_price__price">8 200 <span class="icon-rouble"></span></div>
+                                    <div class="product-params_price__desc">Полотно, коробка дверная 2,5 шт, наличники 5 шт.</div>
+                                </div>
+                                <div class="product-params__item product-params_price">
+                                    <div class="product-params_price__type">Полотно</div>
+                                    <div class="product-params_price__price">8 200 <span class="icon-rouble"></span></div>
+                                    <div class="product-params_price__desc">Полотно, коробка дверная 2,5 шт, наличники 5 шт.</div>
+                                </div>
+
+                            <a href="/" class="btn btn_lg btn_primary btn_block">В корзину</a>
+                            <div class="text_center"><a href="/" class="link-icon link-dot"><span class="icon-heart"></span> <span class="link">В избранное</span></a></div>
+                        </div>
+                        <div class="product-card-list__info">
+                            <h3 class="product-card-list__title"><a href="/">Модель ТД 70-2 теплая</a></h3>
+                            <div class="product-card-list__category">Входная дверь стандарт</div>
+                            <div class="product-params">
+                                <div class="product-params__row clearfix">
+                                    <div class="product-params__name">Размеры:</div>
+                                    <div class="product-params__value">
+                                        <a href="/" class="link-dot">200*40</a>
+                                        <div class="link-dot active">200*60</div>
+                                        <div class="link-dot">200*80</div>
+                                        <div class="link-dot">200*90</div>
+                                    </div>
+                                </div>
+                                <div class="product-params__row clearfix">
+                                    <div class="product-params__name">Формы:</div>
+                                    <div class="product-params__value">
+                                        <a href="/" class="link-dot active">Сплошная</a>
+                                        <div class="link-dot">Со вставками</div>
+                                    </div>
+                                </div>
+                                <div class="product-params__row product-params__row_color clearfix">
+                                    <div class="product-params__name">Цвета:</div>
+                                    <div class="product-params__value">
+                                        <div class="product-params__item"></div>
+                                        <div class="product-params__item active"></div>
+                                        <div class="product-params__item"></div>
+                                        <div class="product-params__item"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-info__row clearfix">
+                                    <div class="pull-left">Материал:</div>
+                                    <div class="pull-right">брус хвойных пород, МДФ</div>
+                                </div>
+                                <div class="product-info__row clearfix">
+                                    <div class="pull-left">Отделка:</div>
+                                    <div class="pull-right">Kайн шпон, экологически чистый лак на водной основе</div>
+                                </div>
+                                <div class="product-info__row clearfix">
+                                    <div class="pull-left">Стекло:</div>
+                                    <div class="pull-right">Cатинато белое</div>
+                                </div>
+                                <div class="product-info__row clearfix">
+                                    <div class="pull-left">Толщина (мм):</div>
+                                    <div class="pull-right">40</div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="product-card-list__item">
+                        <div class="product-label">
+                            <div class="icon-hit"></div>
+                            <div class="icon-sale"></div>
+                            <div class="icon-new"></div>
+                        </div>
+                        <div class="product-card-list__image"><img src="images/product-preview-01.jpg"></div>
+                        <div class="product-card-list__action">
+                                <div class="product-params__item product-params_price active">
+                                    <div class="product-params_price__type">Комплект</div>
+                                    <div class="product-params_price__price">8 200 <span class="icon-rouble"></span></div>
+                                    <div class="product-params_price__desc">Полотно, коробка дверная 2,5 шт, наличники 5 шт.</div>
+                                </div>
+                                <div class="product-params__item product-params_price">
+                                    <div class="product-params_price__type">Полотно</div>
+                                    <div class="product-params_price__price">8 200 <span class="icon-rouble"></span></div>
+                                    <div class="product-params_price__desc">Полотно, коробка дверная 2,5 шт, наличники 5 шт.</div>
+                                </div>
+
+                            <a href="/" class="btn btn_lg btn_primary btn_block">В корзину</a>
+                            <div class="text_center"><a href="/" class="link-icon link-dot"><span class="icon-heart"></span> <span class="link">В избранное</span></a></div>
+                        </div>
+                        <div class="product-card-list__info">
+                            <h3 class="product-card-list__title"><a href="/">Модель ТД 70-2 теплая</a></h3>
+                            <div class="product-card-list__category">Входная дверь стандарт</div>
+                            <div class="product-params">
+                                <div class="product-params__row clearfix">
+                                    <div class="product-params__name">Размеры:</div>
+                                    <div class="product-params__value">
+                                        <a href="/" class="link-dot">200*40</a>
+                                        <div class="link-dot active">200*60</div>
+                                        <div class="link-dot">200*80</div>
+                                        <div class="link-dot">200*90</div>
+                                    </div>
+                                </div>
+                                <div class="product-params__row clearfix">
+                                    <div class="product-params__name">Формы:</div>
+                                    <div class="product-params__value">
+                                        <a href="/" class="link-dot active">Сплошная</a>
+                                        <div class="link-dot">Со вставками</div>
+                                    </div>
+                                </div>
+                                <div class="product-params__row product-params__row_color clearfix">
+                                    <div class="product-params__name">Цвета:</div>
+                                    <div class="product-params__value">
+                                        <div class="product-params__item"></div>
+                                        <div class="product-params__item active"></div>
+                                        <div class="product-params__item"></div>
+                                        <div class="product-params__item"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-info__row clearfix">
+                                    <div class="pull-left">Материал:</div>
+                                    <div class="pull-right">брус хвойных пород, МДФ</div>
+                                </div>
+                                <div class="product-info__row clearfix">
+                                    <div class="pull-left">Отделка:</div>
+                                    <div class="pull-right">Kайн шпон, экологически чистый лак на водной основе</div>
+                                </div>
+                                <div class="product-info__row clearfix">
+                                    <div class="pull-left">Стекло:</div>
+                                    <div class="pull-right">Cатинато белое</div>
+                                </div>
+                                <div class="product-info__row clearfix">
+                                    <div class="pull-left">Толщина (мм):</div>
+                                    <div class="pull-right">40</div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="product-card-list__item">
+                        <div class="product-label">
+                            <div class="icon-hit"></div>
+                            <div class="icon-sale"></div>
+                            <div class="icon-new"></div>
+                        </div>
+                        <div class="product-card-list__image"><img src="images/product-preview-01.jpg"></div>
+                        <div class="product-card-list__action">
+                                <div class="product-params__item product-params_price active">
+                                    <div class="product-params_price__type">Комплект</div>
+                                    <div class="product-params_price__price">8 200 <span class="icon-rouble"></span></div>
+                                    <div class="product-params_price__desc">Полотно, коробка дверная 2,5 шт, наличники 5 шт.</div>
+                                </div>
+                                <div class="product-params__item product-params_price">
+                                    <div class="product-params_price__type">Полотно</div>
+                                    <div class="product-params_price__price">8 200 <span class="icon-rouble"></span></div>
+                                    <div class="product-params_price__desc">Полотно, коробка дверная 2,5 шт, наличники 5 шт.</div>
+                                </div>
+
+                            <a href="/" class="btn btn_lg btn_primary btn_block">В корзину</a>
+                            <div class="text_center"><a href="/" class="link-icon link-dot"><span class="icon-heart"></span> <span class="link">В избранное</span></a></div>
+                        </div>
+                        <div class="product-card-list__info">
+                            <h3 class="product-card-list__title"><a href="/">Модель ТД 70-2 теплая</a></h3>
+                            <div class="product-card-list__category">Входная дверь стандарт</div>
+                            <div class="product-params">
+                                <div class="product-params__row clearfix">
+                                    <div class="product-params__name">Размеры:</div>
+                                    <div class="product-params__value">
+                                        <a href="/" class="link-dot">200*40</a>
+                                        <div class="link-dot active">200*60</div>
+                                        <div class="link-dot">200*80</div>
+                                        <div class="link-dot">200*90</div>
+                                    </div>
+                                </div>
+                                <div class="product-params__row clearfix">
+                                    <div class="product-params__name">Формы:</div>
+                                    <div class="product-params__value">
+                                        <a href="/" class="link-dot active">Сплошная</a>
+                                        <div class="link-dot">Со вставками</div>
+                                    </div>
+                                </div>
+                                <div class="product-params__row product-params__row_color clearfix">
+                                    <div class="product-params__name">Цвета:</div>
+                                    <div class="product-params__value">
+                                        <div class="product-params__item"></div>
+                                        <div class="product-params__item active"></div>
+                                        <div class="product-params__item"></div>
+                                        <div class="product-params__item"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-info__row clearfix">
+                                    <div class="pull-left">Материал:</div>
+                                    <div class="pull-right">брус хвойных пород, МДФ</div>
+                                </div>
+                                <div class="product-info__row clearfix">
+                                    <div class="pull-left">Отделка:</div>
+                                    <div class="pull-right">Kайн шпон, экологически чистый лак на водной основе</div>
+                                </div>
+                                <div class="product-info__row clearfix">
+                                    <div class="pull-left">Стекло:</div>
+                                    <div class="pull-right">Cатинато белое</div>
+                                </div>
+                                <div class="product-info__row clearfix">
+                                    <div class="pull-left">Толщина (мм):</div>
+                                    <div class="pull-right">40</div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="product-card-list__item">
+                        <div class="product-label">
+                            <div class="icon-hit"></div>
+                            <div class="icon-sale"></div>
+                            <div class="icon-new"></div>
+                        </div>
+                        <div class="product-card-list__image"><img src="images/product-preview-01.jpg"></div>
+                        <div class="product-card-list__action">
+                                <div class="product-params__item product-params_price active">
+                                    <div class="product-params_price__type">Комплект</div>
+                                    <div class="product-params_price__price">8 200 <span class="icon-rouble"></span></div>
+                                    <div class="product-params_price__desc">Полотно, коробка дверная 2,5 шт, наличники 5 шт.</div>
+                                </div>
+                                <div class="product-params__item product-params_price">
+                                    <div class="product-params_price__type">Полотно</div>
+                                    <div class="product-params_price__price">8 200 <span class="icon-rouble"></span></div>
+                                    <div class="product-params_price__desc">Полотно, коробка дверная 2,5 шт, наличники 5 шт.</div>
+                                </div>
+
+                            <a href="/" class="btn btn_lg btn_primary btn_block">В корзину</a>
+                            <div class="text_center"><a href="/" class="link-icon link-dot"><span class="icon-heart"></span> <span class="link">В избранное</span></a></div>
+                        </div>
+                        <div class="product-card-list__info">
+                            <h3 class="product-card-list__title"><a href="/">Модель ТД 70-2 теплая</a></h3>
+                            <div class="product-card-list__category">Входная дверь стандарт</div>
+                            <div class="product-params">
+                                <div class="product-params__row clearfix">
+                                    <div class="product-params__name">Размеры:</div>
+                                    <div class="product-params__value">
+                                        <a href="/" class="link-dot">200*40</a>
+                                        <div class="link-dot active">200*60</div>
+                                        <div class="link-dot">200*80</div>
+                                        <div class="link-dot">200*90</div>
+                                    </div>
+                                </div>
+                                <div class="product-params__row clearfix">
+                                    <div class="product-params__name">Формы:</div>
+                                    <div class="product-params__value">
+                                        <a href="/" class="link-dot active">Сплошная</a>
+                                        <div class="link-dot">Со вставками</div>
+                                    </div>
+                                </div>
+                                <div class="product-params__row product-params__row_color clearfix">
+                                    <div class="product-params__name">Цвета:</div>
+                                    <div class="product-params__value">
+                                        <div class="product-params__item"></div>
+                                        <div class="product-params__item active"></div>
+                                        <div class="product-params__item"></div>
+                                        <div class="product-params__item"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-info__row clearfix">
+                                    <div class="pull-left">Материал:</div>
+                                    <div class="pull-right">брус хвойных пород, МДФ</div>
+                                </div>
+                                <div class="product-info__row clearfix">
+                                    <div class="pull-left">Отделка:</div>
+                                    <div class="pull-right">Kайн шпон, экологически чистый лак на водной основе</div>
+                                </div>
+                                <div class="product-info__row clearfix">
+                                    <div class="pull-left">Стекло:</div>
+                                    <div class="pull-right">Cатинато белое</div>
+                                </div>
+                                <div class="product-info__row clearfix">
+                                    <div class="pull-left">Толщина (мм):</div>
+                                    <div class="pull-right">40</div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="product-card-list__item">
+                        <div class="product-label">
+                            <div class="icon-hit"></div>
+                            <div class="icon-sale"></div>
+                            <div class="icon-new"></div>
+                        </div>
+                        <div class="product-card-list__image"><img src="images/product-preview-01.jpg"></div>
+                        <div class="product-card-list__action">
+                                <div class="product-params__item product-params_price active">
+                                    <div class="product-params_price__type">Комплект</div>
+                                    <div class="product-params_price__price">8 200 <span class="icon-rouble"></span></div>
+                                    <div class="product-params_price__desc">Полотно, коробка дверная 2,5 шт, наличники 5 шт.</div>
+                                </div>
+                                <div class="product-params__item product-params_price">
+                                    <div class="product-params_price__type">Полотно</div>
+                                    <div class="product-params_price__price">8 200 <span class="icon-rouble"></span></div>
+                                    <div class="product-params_price__desc">Полотно, коробка дверная 2,5 шт, наличники 5 шт.</div>
+                                </div>
+
+                            <a href="/" class="btn btn_lg btn_primary btn_block">В корзину</a>
+                            <div class="text_center"><a href="/" class="link-icon link-dot"><span class="icon-heart"></span> <span class="link">В избранное</span></a></div>
+                        </div>
+                        <div class="product-card-list__info">
+                            <h3 class="product-card-list__title"><a href="/">Модель ТД 70-2 теплая</a></h3>
+                            <div class="product-card-list__category">Входная дверь стандарт</div>
+                            <div class="product-params">
+                                <div class="product-params__row clearfix">
+                                    <div class="product-params__name">Размеры:</div>
+                                    <div class="product-params__value">
+                                        <a href="/" class="link-dot">200*40</a>
+                                        <div class="link-dot active">200*60</div>
+                                        <div class="link-dot">200*80</div>
+                                        <div class="link-dot">200*90</div>
+                                    </div>
+                                </div>
+                                <div class="product-params__row clearfix">
+                                    <div class="product-params__name">Формы:</div>
+                                    <div class="product-params__value">
+                                        <a href="/" class="link-dot active">Сплошная</a>
+                                        <div class="link-dot">Со вставками</div>
+                                    </div>
+                                </div>
+                                <div class="product-params__row product-params__row_color clearfix">
+                                    <div class="product-params__name">Цвета:</div>
+                                    <div class="product-params__value">
+                                        <div class="product-params__item"></div>
+                                        <div class="product-params__item active"></div>
+                                        <div class="product-params__item"></div>
+                                        <div class="product-params__item"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-info__row clearfix">
+                                    <div class="pull-left">Материал:</div>
+                                    <div class="pull-right">брус хвойных пород, МДФ</div>
+                                </div>
+                                <div class="product-info__row clearfix">
+                                    <div class="pull-left">Отделка:</div>
+                                    <div class="pull-right">Kайн шпон, экологически чистый лак на водной основе</div>
+                                </div>
+                                <div class="product-info__row clearfix">
+                                    <div class="pull-left">Стекло:</div>
+                                    <div class="pull-right">Cатинато белое</div>
+                                </div>
+                                <div class="product-info__row clearfix">
+                                    <div class="pull-left">Толщина (мм):</div>
+                                    <div class="pull-right">40</div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="product-card-list__item">
+                        <div class="product-label">
+                            <div class="icon-hit"></div>
+                            <div class="icon-sale"></div>
+                            <div class="icon-new"></div>
+                        </div>
+                        <div class="product-card-list__image"><img src="images/product-preview-01.jpg"></div>
+                        <div class="product-card-list__action">
+                                <div class="product-params__item product-params_price active">
+                                    <div class="product-params_price__type">Комплект</div>
+                                    <div class="product-params_price__price">8 200 <span class="icon-rouble"></span></div>
+                                    <div class="product-params_price__desc">Полотно, коробка дверная 2,5 шт, наличники 5 шт.</div>
+                                </div>
+                                <div class="product-params__item product-params_price">
+                                    <div class="product-params_price__type">Полотно</div>
+                                    <div class="product-params_price__price">8 200 <span class="icon-rouble"></span></div>
+                                    <div class="product-params_price__desc">Полотно, коробка дверная 2,5 шт, наличники 5 шт.</div>
+                                </div>
+
+                            <a href="/" class="btn btn_lg btn_primary btn_block">В корзину</a>
+                            <div class="text_center"><a href="/" class="link-icon link-dot"><span class="icon-heart"></span> <span class="link">В избранное</span></a></div>
+                        </div>
+                        <div class="product-card-list__info">
+                            <h3 class="product-card-list__title"><a href="/">Модель ТД 70-2 теплая</a></h3>
+                            <div class="product-card-list__category">Входная дверь стандарт</div>
+                            <div class="product-params">
+                                <div class="product-params__row clearfix">
+                                    <div class="product-params__name">Размеры:</div>
+                                    <div class="product-params__value">
+                                        <a href="/" class="link-dot">200*40</a>
+                                        <div class="link-dot active">200*60</div>
+                                        <div class="link-dot">200*80</div>
+                                        <div class="link-dot">200*90</div>
+                                    </div>
+                                </div>
+                                <div class="product-params__row clearfix">
+                                    <div class="product-params__name">Формы:</div>
+                                    <div class="product-params__value">
+                                        <a href="/" class="link-dot active">Сплошная</a>
+                                        <div class="link-dot">Со вставками</div>
+                                    </div>
+                                </div>
+                                <div class="product-params__row product-params__row_color clearfix">
+                                    <div class="product-params__name">Цвета:</div>
+                                    <div class="product-params__value">
+                                        <div class="product-params__item"></div>
+                                        <div class="product-params__item active"></div>
+                                        <div class="product-params__item"></div>
+                                        <div class="product-params__item"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-info__row clearfix">
+                                    <div class="pull-left">Материал:</div>
+                                    <div class="pull-right">брус хвойных пород, МДФ</div>
+                                </div>
+                                <div class="product-info__row clearfix">
+                                    <div class="pull-left">Отделка:</div>
+                                    <div class="pull-right">Kайн шпон, экологически чистый лак на водной основе</div>
+                                </div>
+                                <div class="product-info__row clearfix">
+                                    <div class="pull-left">Стекло:</div>
+                                    <div class="pull-right">Cатинато белое</div>
+                                </div>
+                                <div class="product-info__row clearfix">
+                                    <div class="pull-left">Толщина (мм):</div>
+                                    <div class="pull-right">40</div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="page-block clearfix">
+                    <div class="paging pull-left">
+                        <a href="#" class="paging__item">1</a>
+                        <a href="#" class="paging__item">2</a>
+                        <span class="paging__item active">3</span>
+                        <a href="#" class="paging__item">4</a>
+                        <span class="paging__item paging__item_separator">&hellip;</span>
+                        <a href="#" class="paging__item">5</a>
+                        <a href="#" class="paging__item">6</a>
+                        <a href="#" class="paging__item">7</a>
+                    </div>
+                    <div class="pull-right">Показывать по <select><option>32</option><option>22</option></select> товаров</div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="content-block seo-block wow fadeIn">
+    <div class="container">
+        <div class="seo-block__title">СЕО-ТЕКСТ ДЛЯ КАТЕГОРИИ</div>
+        <div class="row">
+            <div class="col-xs-6">
+                <p>Межкомнатные двери - это неотъемлемый атрибут любого дома 
+или квартиры. В современном обществе  - это защита и предмет интерьера, в них совмещены надежность и изящество. С одной 
+стороны, необходимо, чтобы входные двери позволяли изолировать пространство и обеспечивали уединенный отдых после напряженного рабочего дня, с другой стороны, не создавали четких границ 
+и помогали создать восхитительную атмосферу уюта, солидности 
+и безопасности в Вашем доме.</p>
+                <p>Руководствуясь более чем семилетним опытом работы на рынке дверей, мы стараемся отобрать в ассортимент своего интернет-магазина только самые современные и качественные модели дверных полотен, поддерживающих актуальные тренды в дверной моде. 
+Мы ориентируемся только на самые последние веяния европейских и российских дизайнеров в проектировании модных и классических интерьеров домов и квартир, и  предлагаем купить межкомнатные двери, которые способны гармонично вписаться в  любой интерьер.</p>
+            </div>
+            <div class="col-xs-6">
+                <p>Наша основная задача, которую мы поставили перед собой – это создание оптимально выгодного и комфортного предложения для покупателей, в сфере реализации межкомнатных и входных дверей. Поэтому, помимо огромного ассортимента качественных дверей, мы предлагаем и услуги высококвалифицированных специалистов в области сервиса по установке межкомнатных дверей, а также доступные услуги по доставке Вашего заказа транспортом компании.</p>
+                <p>Доступные цены на межкомнатные двери, качественный сервис, соблюдение сроков поставки дверей, реальная экономия времени и нервов – вот что такое интернет-магазин дверей «Свои Двери»!</p>
+                <h5>ЗАЯВКИ ЧЕРЕЗ САЙТ ПРИНИМАЮТСЯ КРУГЛОСУТОЧНО!</h5>
+                <p>Если Вам нужна консультация специалиста - пишите нам в окно "комментарии к заказу" и мы ответим!</p>
+            </div>
+        </div>
+    </div>
+</div>
+    
+<div class="footer wow fadeIn">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-2">
+                <div class="footer__logo"><a href="/"><img src="images/footer-logo.png" /></a></div>
+                <div class="footer__copy">&copy; 2013-2015</div>
+            </div>
+            <div class="col-xs-5 footer__center">
+                <div class="row">
+                    <div class="col-xs-5 footer__phone">
+                        <span class="icon-phone"></span><b>Телефон:</b><br/>
+                        <span class="footer__phone__num">+7 (343) 247-82-48</span><br/>
+                        <a href="/" class="footer__phone__callback">Перезвоните мне!</a>
+                    </div>
+                    <div class="col-xs-7 footer__addr">
+                        <div><span class="icon-map"></span><b>Адрес в <a href="/">Екатеринбурге</a>:</b><br/>ул. Данилы Зверева,<br/>д. 31, литер "S", оф. 45</div>
+                    </div>
+                </div>
+                <div class="row footer__menu__wrap">
+                    <ul class="col-xs-3 footer__menu">
+                        <li class="footer__menu__item"><a href="/">Акции</a></li>
+                        <li class="footer__menu__item"><a href="/">Услуги</a></li>
+                        <li class="footer__menu__item"><a href="/">О дверях</a></li>
+                        <li class="footer__menu__item"><a href="/">Контакты</a></li>
+                    </ul>
+                    <ul class="col-xs-4 footer__menu">
+                        <li class="footer__menu__item"><a href="/">Покупателям</a></li>
+                        <li class="footer__menu__item"><a href="/">Строителям</a></li>
+                        <li class="footer__menu__item"><a href="/">Галерея</a></li>
+                        <li class="footer__menu__item"><a href="/">О компании</a></li>
+                    </ul>
+                    <ul class="col-xs-5 footer__menu">
+                        <li class="footer__menu__item"><a href="/">Входные двери</a></li>
+                        <li class="footer__menu__item"><a href="/">Межкомнатные двери</a></li>
+                        <li class="footer__menu__item"><a href="/">Межкомнатные арки</a></li>
+                        <li class="footer__menu__item"><a href="/">Фурнитура</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="col-xs-5 footer__right">
+                <div class="row">
+                    <div class="col-xs-6">
+                        <div class="footer__block"><img src="images/footer-metrik.png" /></div>
+                        <div class="footer__block"><img src="images/footer-flamp.png" /></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div class="footer__block">
+                            <h6>Поделиться:</h6>
+                            <img src="images/footer-social.png"/>
+                        </div>
+                        <div class="footer__block">
+                            <h6>Дизайн сайта:</h6>
+                            <img src="images/footer-design.png"/>
+                        </div>
+                        <div class="footer__block">
+                            <h6>Программирование:</h6>
+                            <img src="images/footer-develop.png"/>
+                        </div>
+                    </div>
+                </div>          
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

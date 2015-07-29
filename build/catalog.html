@@ -7,7 +7,6 @@
     <link rel="stylesheet" type='text/css' href="css/bootstrap.min.css"/>
     <link rel="stylesheet" type='text/css' href="css/style.min.css"/>
     <script src="js/jquery.min.js"></script>
-    <script src="js/jquery.cycle2.min.js"></script>
     <script src="js/script.min.js"></script>
 </head> 
 <body>
@@ -35,7 +34,7 @@
         <div class="header__logo"><a href="#" title=""><img src="images/logo.png" alt=""></a></div>
         <div class="header__phone">
             <div class="header__phone__item"><span class="icon-phone"></span><span class="header__phone__highlight">+7 (343)</span> <b>247-82-48</b></div>
-            <a href="/" class="header__phone__callback">Перезвоните мне!</a>
+            <a href="/" class="link-dot">Перезвоните мне!</a>
         </div>
         <div class="header__addr">
             <div><span class="icon-map"></span><a href="/" class="header__addr__city">Екатеринбург <span class="icon-arrow-down"></span></a></div>            
@@ -73,10 +72,10 @@
                         <div class="filter-block__header"><h4>СЕРИИ</h4></div>
                         <div class="filter-block__body">
                             <ul class="filter-block__list">
-                                <li class="filter-block__list__item"><a href="/" class="link-dot">Престиж серия</a></li>
-                                <li class="filter-block__list__item"><a href="/" class="link-dot">Стандарт серия</a></li>
-                                <li class="filter-block__list__item"><a href="/" class="link-dot">Техническая серия</a></li>
-                                <li class="filter-block__list__item"><a href="/" class="link-dot">Противопожарные</a></li>
+                                <li class="filter-block__list__item"><a href="/" class="link-dot">Престиж серия <span class="icon-close">&times;</span></a></li>
+                                <li class="filter-block__list__item"><a href="/" class="link-dot">Стандарт серия <span class="icon-close">&times;</span></a></li>
+                                <li class="filter-block__list__item active"><a href="/" class="link-dot">Техническая серия <span class="icon-close">&times;</span></a></li>
+                                <li class="filter-block__list__item"><a href="/" class="link-dot">Противопожарные <span class="icon-close">&times;</span></a></li>
                             </ul>
                         </div>
                     </div>
@@ -94,7 +93,7 @@
                                 <li class="filter-block__color__item"></li>
                                 <li class="filter-block__color__item"></li>
                                 <li class="filter-block__color__item"></li>
-                                <li class="filter-block__color__item"></li>
+                                <li class="filter-block__color__item active"></li>
                                 <li class="filter-block__color__item"></li>
                                 <li class="filter-block__color__item"></li>
                                 <li class="filter-block__color__item"></li>
@@ -108,10 +107,11 @@
                         <div class="filter-block__header"><h4>Толщина стали</h4></div>
                         <div class="filter-block__body">
                             <ul class="filter-block__list">
-                                <li class="filter-block__list__item"><a href="/" class="link-dot">1 мм</a></li>
-                                <li class="filter-block__list__item"><a href="/" class="link-dot">1,5 мм</a></li>
-                                <li class="filter-block__list__item"><a href="/" class="link-dot">2 мм</a></li>
-                                <li class="filter-block__list__item"><a href="/" class="link-dot">2,5 мм</a></li>
+                                <li class="filter-block__list__item"><a href="/" class="link-dot">1 мм <span class="icon-close">&times;</span></a></li>
+                                <li class="filter-block__list__item active"><a href="/" class="link-dot">1,5 мм <span class="icon-close">&times;</span></a></li>
+                                <li class="filter-block__list__item active"><span class="link-dot">1,5 мм <span class="icon-close">&times;</span></span></li>
+                                <li class="filter-block__list__item"><a href="/" class="link-dot">2 мм <span class="icon-close">&times;</span></a></li>
+                                <li class="filter-block__list__item"><a href="/" class="link-dot">2,5 мм <span class="icon-close">&times;</span></a></li>
                             </ul>
                         </div>
                     </div>
@@ -163,12 +163,21 @@
                     <h2 class="page-header__title">ВХОДНЫЕ ДВЕРИ</h2>
                 </div>
                 <div>
+                <div class="page-block clearfix">
+                    <ul class="filter-list">
+                        <li class="filter-list__item">Стандарт серия <span class="icon-close">&times;</span></li>
+                        <li class="filter-list__item">Стандарт серия <span class="icon-close">&times;</span></li>
+                        <li class="filter-list__item">Стандарт серия <span class="icon-close">&times;</span></li>
+                        <li class="filter-list__item">Стандарт серия <span class="icon-close">&times;</span></li>
+                        <li><a href="/" class="btn btn_xs btn_secondary">Сбросить фильтры</a></li>
+                    </ul>
+                </div>
                 <div class="page-block sort-filter clearfix">
-                    <div class="sort-filter__item"><b>Сортировать по:</b>  <span class="link-icon sort-filter__link"><span class="link">цене</span> <span class="icon-arrow-down"></span></span> <span class="link-icon sort-filter__link active"><span class="link">популярности</span> <span class="icon-arrow-down"></span></span></div>
+                    <div class="sort-filter__item"><b>Сортировать по:</b>  <span class="link-icon link-dot sort-filter__link"><span class="link">цене</span> <span class="icon-arrow-down"></span></span> <span class="link-icon link-dot sort-filter__link active"><span class="link">популярности</span> <span class="icon-arrow-down"></span></span></div>
                     <div class="sort-filter__item"><div class="form-checkbox"><label><input type="checkbox" class="form-input_checkbox"/> Только товар в наличии</label></div></div>
                     <div class="sort-filter__item pull-right">
-                        <a href="/" class="link-icon sort-filter__link"><span class="icon-list"></span> <span class="link">Списком</span></a>
-                        <a href="/" class="link-icon sort-filter__link active"><span class="icon-card"></span> <span class="link">Карточками</span></a>
+                        <a href="/" class="link-icon link-dot sort-filter__link active"><span class="icon-list"></span> <span class="link">Списком</span></a>
+                        <a href="/" class="link-icon link-dot sort-filter__link"><span class="icon-card"></span> <span class="link">Карточками</span></a>
                     </div>
                 </div>
                 <div class="page-block clearfix">
@@ -188,7 +197,7 @@
                 <div class="row row_inline product-list">
                     <div class="col-xs-3 product-list__item">
                         <div>
-                            <div class="product-list__label">
+                            <div class="product-label">
                                 <div class="icon-hit"></div>
                                 <div class="icon-sale"></div>
                                 <div class="icon-new"></div>
@@ -202,7 +211,7 @@
                             <a href="/" class="link-icon product-list__fastview">
                                 <span class="icon-eye"></span><br/><span class="link">Быстрый<br/>просмотр</span>
                             </a>
-                            <div class="product-list__label">
+                            <div class="product-label">
                                 <div class="icon-hit"></div>
                                 <div class="icon-sale"></div>
                                 <div class="icon-new"></div>
@@ -212,12 +221,12 @@
                             <div class="product-list__desc">Входная дверь стандарт</div>
                             <div class="product-list__price">7 783 <span class="icon-rouble"></span></div>
                             <a href="/" class="btn btn_lg btn_primary btn_block product-list__basket">В корзину</a>
-                            <div class="product-list__favorite"><a href="/"><span class="icon-heart"></span> <span class="link">В избранное</span></a></div>
+                            <div class="product-list__favorite"><a href="/" class="link-icon link-dot"><span class="icon-heart"></span> <span class="link">В избранное</span></a></div>
                         </div>                                                    
                     </div>
                     <div class="col-xs-3 product-list__item">                                                                
                         <div>
-                            <div class="product-list__label">
+                            <div class="product-label">
                                 <div class="icon-hit"></div>
                                 <div class="icon-sale"></div>
                             </div>
@@ -230,7 +239,7 @@
                             <a href="/" class="link-icon product-list__fastview">
                                 <span class="icon-eye"></span><br/><span class="link">Быстрый<br/>просмотр</span>
                             </a>
-                            <div class="product-list__label">
+                            <div class="product-label">
                                 <div class="icon-hit"></div>
                                 <div class="icon-sale"></div>
                             </div>
@@ -239,12 +248,12 @@
                             <div class="product-list__desc">Входная дверь стандарт</div>
                             <div class="product-list__price"><span class="product-list__old-price">7 700 <span class="icon-rouble"></span></span> 7 783 <span class="icon-rouble"></span></div>
                             <a href="/" class="btn btn_lg btn_primary btn_block product-list__basket">В корзину</a>
-                            <div class="product-list__favorite"><a href="/"><span class="icon-heart"></span> <span class="link">В избранное</span></a></div>
+                            <div class="product-list__favorite"><a href="/" class="link-icon link-dot"><span class="icon-heart"></span> <span class="link">В избранное</span></a></div>
                         </div>                                
                     </div>
                     <div class="col-xs-3 product-list__item">                                
                         <div>
-                            <div class="product-list__label">
+                            <div class="product-label">
                                 <div class="icon-hit"></div>
                             </div>
                             <div class="product-list__image"><img src="images/product-01.jpg"/></div>
@@ -256,7 +265,7 @@
                             <a href="/" class="link-icon product-list__fastview">
                                 <span class="icon-eye"></span><br/><span class="link">Быстрый<br/>просмотр</span>
                             </a>
-                            <div class="product-list__label">
+                            <div class="product-label">
                                 <div class="icon-hit"></div>
                             </div>
                             <div class="product-list__image"><img src="images/product-01.jpg"/></div>
@@ -264,12 +273,12 @@
                             <div class="product-list__desc">Входная дверь стандарт</div>
                             <div class="product-list__price">7 783 <span class="icon-rouble"></span></div>
                             <a href="/" class="btn btn_lg btn_primary btn_block product-list__basket">В корзину</a>
-                            <div class="product-list__favorite"><a href="/"><span class="icon-heart"></span> <span class="link">В избранное</span></a></div>
+                            <div class="product-list__favorite"><a href="/" class="link-icon link-dot"><span class="icon-heart"></span> <span class="link">В избранное</span></a></div>
                         </div>                                
                     </div>
                     <div class="col-xs-3 product-list__item">
                         <div>
-                            <div class="product-list__label">
+                            <div class="product-label">
                                 <div class="icon-sale"></div>
                             </div>
                             <div class="product-list__image"><img src="images/product-01.jpg"/></div>
@@ -281,7 +290,7 @@
                             <a href="/" class="link-icon product-list__fastview">
                                 <span class="icon-eye"></span><br/><span class="link">Быстрый<br/>просмотр</span>
                             </a>
-                            <div class="product-list__label">
+                            <div class="product-label">
                                 <div class="icon-sale"></div>
                             </div>
                             <div class="product-list__image"><img src="images/product-01.jpg"/></div>
@@ -289,12 +298,12 @@
                             <div class="product-list__desc">Входная дверь стандарт</div>
                             <div class="product-list__price">7 783 <span class="icon-rouble"></span></div>
                             <a href="/" class="btn btn_lg btn_primary btn_block product-list__basket">В корзину</a>
-                            <div class="product-list__favorite"><a href="/"><span class="icon-heart"></span> <span class="link">В избранное</span></a></div>
+                            <div class="product-list__favorite"><a href="/" class="link-icon link-dot"><span class="icon-heart"></span> <span class="link">В избранное</span></a></div>
                         </div>
                     </div>
                     <div class="col-xs-3 product-list__item">
                         <div>
-                            <div class="product-list__label">
+                            <div class="product-label">
                                 <div class="icon-new"></div>
                             </div>
                             <div class="product-list__image"><img src="images/product-01.jpg"/></div>
@@ -306,7 +315,7 @@
                             <a href="/" class="link-icon product-list__fastview">
                                 <span class="icon-eye"></span><br/><span class="link">Быстрый<br/>просмотр</span>
                             </a>
-                            <div class="product-list__label">
+                            <div class="product-label">
                                 <div class="icon-new"></div>
                             </div>
                             <div class="product-list__image"><img src="images/product-01.jpg"/></div>
@@ -314,12 +323,12 @@
                             <div class="product-list__desc">Входная дверь стандарт</div>
                             <div class="product-list__price">7 783 <span class="icon-rouble"></span></div>
                             <a href="/" class="btn btn_lg btn_primary btn_block product-list__basket">В корзину</a>
-                            <div class="product-list__favorite"><a href="/"><span class="icon-heart"></span> <span class="link">В избранное</span></a></div>
+                            <div class="product-list__favorite"><a href="/" class="link-icon link-dot"><span class="icon-heart"></span> <span class="link">В избранное</span></a></div>
                         </div>
                     </div>
                     <div class="col-xs-3 product-list__item">
                         <div>
-                            <div class="product-list__label">
+                            <div class="product-label">
                                 <div class="icon-hit"></div>
                                 <div class="icon-sale"></div>
                                 <div class="icon-new"></div>
@@ -333,7 +342,7 @@
                             <a href="/" class="link-icon product-list__fastview">
                                 <span class="icon-eye"></span><br/><span class="link">Быстрый<br/>просмотр</span>
                             </a>
-                            <div class="product-list__label">
+                            <div class="product-label">
                                 <div class="icon-hit"></div>
                                 <div class="icon-sale"></div>
                                 <div class="icon-new"></div>
@@ -343,12 +352,12 @@
                             <div class="product-list__desc">Входная дверь стандарт</div>
                             <div class="product-list__price">7 783 <span class="icon-rouble"></span></div>
                             <a href="/" class="btn btn_lg btn_primary btn_block product-list__basket">В корзину</a>
-                            <div class="product-list__favorite"><a href="/"><span class="icon-heart"></span> <span class="link">В избранное</span></a></div>
+                            <div class="product-list__favorite"><a href="/" class="link-icon link-dot"><span class="icon-heart"></span> <span class="link">В избранное</span></a></div>
                         </div>                                                    
                     </div>
                     <div class="col-xs-3 product-list__item">                                                                
                         <div>
-                            <div class="product-list__label">
+                            <div class="product-label">
                                 <div class="icon-hit"></div>
                                 <div class="icon-sale"></div>
                             </div>
@@ -361,7 +370,7 @@
                             <a href="/" class="link-icon product-list__fastview">
                                 <span class="icon-eye"></span><br/><span class="link">Быстрый<br/>просмотр</span>
                             </a>
-                            <div class="product-list__label">
+                            <div class="product-label">
                                 <div class="icon-hit"></div>
                                 <div class="icon-sale"></div>
                             </div>
@@ -370,12 +379,12 @@
                             <div class="product-list__desc">Входная дверь стандарт</div>
                             <div class="product-list__price"><span class="product-list__old-price">7 700 <span class="icon-rouble"></span></span> 7 783 <span class="icon-rouble"></span></div>
                             <a href="/" class="btn btn_lg btn_primary btn_block product-list__basket">В корзину</a>
-                            <div class="product-list__favorite"><a href="/"><span class="icon-heart"></span> <span class="link">В избранное</span></a></div>
+                            <div class="product-list__favorite"><a href="/" class="link-icon link-dot"><span class="icon-heart"></span> <span class="link">В избранное</span></a></div>
                         </div>                                
                     </div>
                     <div class="col-xs-3 product-list__item">                                
                         <div>
-                            <div class="product-list__label">
+                            <div class="product-label">
                                 <div class="icon-hit"></div>
                             </div>
                             <div class="product-list__image"><img src="images/product-01.jpg"/></div>
@@ -387,7 +396,7 @@
                             <a href="/" class="link-icon product-list__fastview">
                                 <span class="icon-eye"></span><br/><span class="link">Быстрый<br/>просмотр</span>
                             </a>
-                            <div class="product-list__label">
+                            <div class="product-label">
                                 <div class="icon-hit"></div>
                             </div>
                             <div class="product-list__image"><img src="images/product-01.jpg"/></div>
@@ -395,12 +404,12 @@
                             <div class="product-list__desc">Входная дверь стандарт</div>
                             <div class="product-list__price">7 783 <span class="icon-rouble"></span></div>
                             <a href="/" class="btn btn_lg btn_primary btn_block product-list__basket">В корзину</a>
-                            <div class="product-list__favorite"><a href="/"><span class="icon-heart"></span> <span class="link">В избранное</span></a></div>
+                            <div class="product-list__favorite"><a href="/" class="link-icon link-dot"><span class="icon-heart"></span> <span class="link">В избранное</span></a></div>
                         </div>                                
                     </div>
                     <div class="col-xs-3 product-list__item">
                         <div>
-                            <div class="product-list__label">
+                            <div class="product-label">
                                 <div class="icon-sale"></div>
                             </div>
                             <div class="product-list__image"><img src="images/product-01.jpg"/></div>
@@ -412,7 +421,7 @@
                             <a href="/" class="link-icon product-list__fastview">
                                 <span class="icon-eye"></span><br/><span class="link">Быстрый<br/>просмотр</span>
                             </a>
-                            <div class="product-list__label">
+                            <div class="product-label">
                                 <div class="icon-sale"></div>
                             </div>
                             <div class="product-list__image"><img src="images/product-01.jpg"/></div>
@@ -420,12 +429,12 @@
                             <div class="product-list__desc">Входная дверь стандарт</div>
                             <div class="product-list__price">7 783 <span class="icon-rouble"></span></div>
                             <a href="/" class="btn btn_lg btn_primary btn_block product-list__basket">В корзину</a>
-                            <div class="product-list__favorite"><a href="/"><span class="icon-heart"></span> <span class="link">В избранное</span></a></div>
+                            <div class="product-list__favorite"><a href="/" class="link-icon link-dot"><span class="icon-heart"></span> <span class="link">В избранное</span></a></div>
                         </div>
                     </div>
                     <div class="col-xs-3 product-list__item">
                         <div>
-                            <div class="product-list__label">
+                            <div class="product-label">
                                 <div class="icon-new"></div>
                             </div>
                             <div class="product-list__image"><img src="images/product-01.jpg"/></div>
@@ -437,7 +446,7 @@
                             <a href="/" class="link-icon product-list__fastview">
                                 <span class="icon-eye"></span><br/><span class="link">Быстрый<br/>просмотр</span>
                             </a>
-                            <div class="product-list__label">
+                            <div class="product-label">
                                 <div class="icon-new"></div>
                             </div>
                             <div class="product-list__image"><img src="images/product-01.jpg"/></div>
@@ -445,7 +454,7 @@
                             <div class="product-list__desc">Входная дверь стандарт</div>
                             <div class="product-list__price">7 783 <span class="icon-rouble"></span></div>
                             <a href="/" class="btn btn_lg btn_primary btn_block product-list__basket">В корзину</a>
-                            <div class="product-list__favorite"><a href="/"><span class="icon-heart"></span> <span class="link">В избранное</span></a></div>
+                            <div class="product-list__favorite"><a href="/" class="link-icon link-dot"><span class="icon-heart"></span> <span class="link">В избранное</span></a></div>
                         </div>
                     </div>
                 </div>
